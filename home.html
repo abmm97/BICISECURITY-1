@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+<title>BICISECURITY</title>
+<style type="text/css">
+div#message{
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+width:40%;
+border: solid 2px green
+}
+.boton{
+        font-size:10px;
+        font-family:Verdana;
+        font-weight:bold;
+        color:black;
+        background:#7CF871;
+        border:0px;
+        width:180px;
+        height:30px;
+       }
+</style>
+</head>
+<body background="fondo1.jpg">
+<script>
+function usrpas(){
+if (document.form1.usuario.value=="bici" && document.form1.contrasena.value=="1234"){window.location="acceso.php"}
+else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+}
+document.oncontextmenu=new Function("return false");
+</script>
+<table align=center>
+<tr><td background="cabecera.jpg" WIDTH="700" HEIGHT="70">
+<center><FONT FACE="arial black" COLOR=white size=6>Proyecto BICISECURITY</FONT></center>
+</td></tr>
+</table><br><br>
+<center><table border="0">
+<tr><td WIDTH="400" HEIGHT="60"><center><input type="button" value="Presentacion" class="boton" OnClick="location.href='presentacion.html'"></center></td>
+<td WIDTH="400" HEIGHT="60"><center><input type="button" value="Contactenos" class="boton" OnClick="location.href='contactenos.php'"></center></td></tr>
+<tr><td WIDTH="400" HEIGHT="30"></td><td WIDTH="400" HEIGHT="30"></td></tr>
+<tr><td colspan="2">
+<form name="form1">
+<center><table>
+<tr><td><center>INGRESAR</center></td></tr>
+<tr><td>Usuario</td></tr>
+<tr><td><input type="text" name="usuario"></td></tr>
+<tr><td>Contraseña</td></tr>
+<tr><td><input type="password" maxlength='4' name="contrasena"></td></tr>
+<tr><td><input type="button" value="Ingresar" onclick="usrpas()"></td></tr>
+</table></center>
+</form>
+
+</td></tr>
+</table>
+
+
+</body>
+
+
+
+</html>
